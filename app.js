@@ -125,7 +125,7 @@ async function loadProductsFromSupabase() {
   const startTime = performance.now();
 
   try {
-    const response = await fetch(`${PRODUCT_CATALOG_SUPABASE_URL}/rest/v1/products?select=*&order=created_at.desc,id.asc`, {
+    const response = await fetch(`${PRODUCT_CATALOG_SUPABASE_URL}/rest/v1/wc_products?select=${WC_PRODUCT_SELECT}&is_published=eq.true&order=sort_order.asc,created_at.desc`, {
       headers: {
         apikey: PRODUCT_CATALOG_SUPABASE_ANON_KEY,
         Authorization: `Bearer ${PRODUCT_CATALOG_SUPABASE_ANON_KEY}`
@@ -136,7 +136,7 @@ async function loadProductsFromSupabase() {
     const products = await response.json();
     if (!Array.isArray(products) || products.length === 0) throw new Error('Supabase catalog returned 0 products');
 
-    PRODUCTS = products.map(normalizeProduct);
+    PRODUCTS = products.map(mapWcProduct).map(normalizeProduct);
     const endTime = performance.now();
     console.log(`Successfully fetched ${PRODUCTS.length} products from Supabase in ${(endTime - startTime).toFixed(2)}ms`);
   } catch (error) {
@@ -146,6 +146,34 @@ async function loadProductsFromSupabase() {
     isCatalogLoading = false;
     toggleLoader(false);
   }
+}
+
+// wc_* = แค็ตตาล็อกจริงของ Supabase (แบบ normalized) -> แปลงเป็น shape แบนที่หน้าเว็บใช้
+// ponytail: wc_products ยังไม่มี shopee_url/allow_booking/allow_order/featured จึงปิดไว้ (undefined -> false)
+//   พอ DB เพิ่มคอลัมน์ ให้ map ต่อที่นี่ · ชื่อสินค้าประกอบจากหมวด+ยี่ห้อ+รุ่น เพราะ name ใน DB เป็น slug
+const WC_PRODUCT_SELECT = 'id,slug,name,category,description,list_price,retail_price_override,sort_order,created_at,'
+  + 'wc_product_images(url,sort_order),wc_product_fitments(model_name,wc_brands(name))';
+const WC_CATEGORY_MAP = { 'rear-rack': 'rear', 'side-rack': 'side', 'crash-bar': 'crashbar', accessory: 'accessory' };
+const WC_TYPE_LABEL = { 'rear-rack': 'แร็คท้าย', 'side-rack': 'แร็คข้าง', 'crash-bar': 'แคชบาร์', accessory: 'อุปกรณ์เสริม' };
+
+function mapWcProduct(row) {
+  const fit = (row.wc_product_fitments || [])[0] || {};
+  const brand = (fit.wc_brands && fit.wc_brands.name) || '';
+  const model = (fit.model_name || '').toUpperCase();
+  const images = (row.wc_product_images || []).slice().sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
+  // accessory: name ใน DB ขึ้นต้นด้วยชนิดภาษาไทย เช่น "บาร์เสริม-honda-forza750"
+  const thaiHead = /^[฀-๿]+/.exec(row.name || '');
+  const type = row.category === 'accessory' && thaiHead ? thaiHead[0] : (WC_TYPE_LABEL[row.category] || '');
+  return {
+    id: row.slug || row.id,
+    brand,
+    model,
+    name: [type, brand, model].filter(Boolean).join(' ') || row.name,
+    price: row.retail_price_override != null ? row.retail_price_override : row.list_price,
+    category: WC_CATEGORY_MAP[row.category] || row.category,
+    description: row.description || '',
+    image_url: images.length ? images[0].url : ''
+  };
 }
 
 function normalizeProduct(product) {

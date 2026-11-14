@@ -56,7 +56,7 @@ Do not edit stale clone:
 | Layer | Implementation |
 |---|---|
 | Frontend | Vanilla HTML/CSS/JS |
-| Catalog source | `assets/product_catalog_template.csv` |
+| Catalog source | Supabase `wc_products` (+images/fitments) ผ่าน `mapWcProduct()` — ดู `CATALOG_SUPABASE.md` · CSV เป็นแค่ snapshot เก่า |
 | Cart | Browser localStorage |
 | Booking/order destination | Production GitHub Pages repo |
 | Hosting | GitHub Pages |
