@@ -35,7 +35,7 @@ Landing repo:
 
 Remote:
 
-`https://github.com/Gutumrod/kmo-landing-page.git`
+`https://github.com/kmorackbarcustom/kmo-landing-page.git`
 
 Production repo:
 
@@ -108,7 +108,7 @@ Additional JS-bound IDs added after the brief:
 Before changing code:
 
 1. Confirm path is `D:\AI-Workspace\projects\kmo-landing-page\` (Windows) / `/Users/wachirayachankhonkan/AI-Workspace/projects/kmo-landing-page/` (Mac)
-2. Confirm remote is `Gutumrod/kmo-landing-page`
+2. Confirm remote is `kmorackbarcustom/kmo-landing-page`
 3. Run/check `git status --short`
 4. Fetch before larger work: `git fetch --all --prune`
 5. If touching production forms, switch to production repo and verify its remote

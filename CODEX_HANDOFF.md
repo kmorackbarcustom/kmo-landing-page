@@ -12,7 +12,7 @@ Landing repo:
 
 Remote:
 
-`https://github.com/Gutumrod/kmo-landing-page.git`
+`https://github.com/kmorackbarcustom/kmo-landing-page.git`
 
 Production repo:
 
@@ -159,7 +159,7 @@ Production:
 
 ## Verification Snapshot
 
-Checks from 2026-07-19 (live site, `https://gutumrod.github.io/kmo-landing-page/`):
+Checks from 2026-07-19 (live site, `https://kmorackbarcustom.github.io/kmo-landing-page/`):
 
 - Console confirms Supabase catalog fetch works on production: "Successfully fetched 195 products from Supabase" — commit `5cd0658` (CSV → Supabase switch) is live and working, not just local
 - No console errors on load
@@ -169,7 +169,7 @@ Checks from 2026-07-19 (live site, `https://gutumrod.github.io/kmo-landing-page/
 
 Prior checks (2026-07-15):
 
-- Landing remote verified: `Gutumrod/kmo-landing-page`
+- Landing remote verified: `kmorackbarcustom/kmo-landing-page`
 - Production remote verified: `kmorackbarcustom/kmorackbarcustom.github.io`
 - Production repo clean at `bf1b4e1`
 - `node --check app.js` passed for featured-products changes
