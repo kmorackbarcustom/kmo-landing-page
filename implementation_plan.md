@@ -2,7 +2,7 @@
 
 **Last Updated:** 2026-07-19
 **Source of truth:** `PROJECT_CONTEXT.md` + current repo files
-**Current live page:** `https://gutumrod.github.io/kmo-landing-page/`
+**Current live page:** `https://kmorackbarcustom.github.io/kmo-landing-page/`
 
 ---
 
@@ -25,7 +25,7 @@ Repo นี้ไม่ใช่ production transaction system และไม�
 ทำทุกครั้งก่อนแก้ไฟล์:
 
 1. Path ต้องเป็น `D:\AI-Workspace\projects\kmo-landing-page\` (Windows) / `/Users/wachirayachankhonkan/AI-Workspace/projects/kmo-landing-page/` (Mac)
-2. Remote ต้องเป็น `https://github.com/Gutumrod/kmo-landing-page.git`
+2. Remote ต้องเป็น `https://github.com/kmorackbarcustom/kmo-landing-page.git`
 3. Fetch/check status ก่อนแก้: `git fetch --all --prune`, `git status --short`
 4. ถ้าต้องแตะ transaction form หรือ Supabase ให้สลับไป production repo:
    `D:\AI-Workspace\projects\kmorackbarcustom.github.io\` (Windows) / `/Users/wachirayachankhonkan/AI-Workspace/projects/kmorackbarcustom.github.io/` (Mac)

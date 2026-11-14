@@ -66,6 +66,6 @@ Use these files instead of this archived task brief:
 
 Before future edits:
 
-1. Confirm landing repo remote is `Gutumrod/kmo-landing-page`
+1. Confirm landing repo remote is `kmorackbarcustom/kmo-landing-page`
 2. Confirm production repo remote is `kmorackbarcustom/kmorackbarcustom.github.io` before touching transaction files
 3. Do not edit stale clone `D:\AI-Workspace\projects\landing page\KMO\` (Windows-only, not present on Mac — do not recreate it there)

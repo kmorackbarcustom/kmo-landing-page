@@ -3,7 +3,7 @@
 **Last Updated:** 2026-07-19
 **Current Phase:** Landing catalog runtime on HR Supabase; remaining work is product data/photos and production write-path verification
 **Progress:** ~98% สำหรับ landing catalog และ handoff ไป production forms
-**Live URL:** `https://gutumrod.github.io/kmo-landing-page/`
+**Live URL:** `https://kmorackbarcustom.github.io/kmo-landing-page/`
 
 ---
 
@@ -34,7 +34,7 @@
 
 | Purpose | Windows Path | Mac Path | Remote |
 |---|---|---|---|
-| Landing catalog | `D:\AI-Workspace\projects\kmo-landing-page\` | `/Users/wachirayachankhonkan/AI-Workspace/projects/kmo-landing-page/` | `https://github.com/Gutumrod/kmo-landing-page.git` |
+| Landing catalog | `D:\AI-Workspace\projects\kmo-landing-page\` | `/Users/wachirayachankhonkan/AI-Workspace/projects/kmo-landing-page/` | `https://github.com/kmorackbarcustom/kmo-landing-page.git` |
 | Production transaction | `D:\AI-Workspace\projects\kmorackbarcustom.github.io\` | `/Users/wachirayachankhonkan/AI-Workspace/projects/kmorackbarcustom.github.io/` | `https://github.com/kmorackbarcustom/kmorackbarcustom.github.io.git` |
 | Old clone, do not edit | `D:\AI-Workspace\projects\landing page\KMO\` | not present on Mac (stale, do not recreate) | stale |
 
@@ -191,7 +191,7 @@ Production repo:
 Latest checks done 2026-07-19:
 
 - landing repo clean on `main...origin/main`
-- landing remote confirmed as `Gutumrod/kmo-landing-page`
+- landing remote confirmed as `kmorackbarcustom/kmo-landing-page`
 - code confirmed loading products from `https://ybyseaenceyswjnwdmdf.supabase.co/rest/v1/products`
 - CSV snapshot parsed as 195 product rows, 12 columns, `featured=FALSE` for all rows
 - CSV snapshot references only 5 distinct image files, so real per-product images remain the biggest content gap

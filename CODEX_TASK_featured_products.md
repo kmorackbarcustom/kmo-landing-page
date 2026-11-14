@@ -122,13 +122,13 @@ featured=TRUE เฉพาะ id ที่ระบุไว้ด้านล�
    การ์ดถูกต้อง แล้วสินค้านั้นต้องยังอยู่ใน grid ปกติด้วย จากนั้น **revert CSV กลับเป็น FALSE ทั้งหมดก่อน commit**
    (ห้าม push CSV ที่มีการ mark เอง — CEO จะเป็นคน mark จริงเองทีหลัง)
 4. เช็ค mobile viewport ว่า section ใหม่ไม่ชนกับ mobile nav/header ที่เพิ่งแก้เสร็จ (`28a80e6`, `f0b24a1`)
-5. `git remote -v` ต้องเป็น `Gutumrod/kmo-landing-page` ก่อน commit ใดๆ
+5. `git remote -v` ต้องเป็น `kmorackbarcustom/kmo-landing-page` ก่อน commit ใดๆ
 
 ---
 
 ## Where things live
 
-- Landing repo: `D:\AI-Workspace\projects\kmo-landing-page\` (Windows) / `/Users/wachirayachankhonkan/AI-Workspace/projects/kmo-landing-page/` (Mac) (remote `Gutumrod/kmo-landing-page`)
+- Landing repo: `D:\AI-Workspace\projects\kmo-landing-page\` (Windows) / `/Users/wachirayachankhonkan/AI-Workspace/projects/kmo-landing-page/` (Mac) (remote `kmorackbarcustom/kmo-landing-page`)
 - Production repo (ห้ามแตะในงานนี้): `D:\AI-Workspace\projects\kmorackbarcustom.github.io\` (Windows) / `/Users/wachirayachankhonkan/AI-Workspace/projects/kmorackbarcustom.github.io/` (Mac)
 - Design tokens: `DESIGN_BRIEF.md`
 - สถานะโปรเจกต์เต็ม: `PROJECT_CONTEXT.md`, `CODEX_HANDOFF.md`
