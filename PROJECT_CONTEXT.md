@@ -34,8 +34,8 @@
 
 | Purpose | Windows Path | Mac Path | Remote |
 |---|---|---|---|
-| Landing catalog | `D:\AI-Workspace\projects\kmo-landing-page\` | `/Users/wachirayachankhonkan/AI-Workspace/projects/kmo-landing-page/` | `https://github.com/kmorackbarcustom/kmo-landing-page.git` |
-| Production transaction | `D:\AI-Workspace\projects\kmorackbarcustom.github.io\` | `/Users/wachirayachankhonkan/AI-Workspace/projects/kmorackbarcustom.github.io/` | `https://github.com/kmorackbarcustom/kmorackbarcustom.github.io.git` |
+| Landing catalog | `D:\AI-Workspace\projects\kmo-landing-page\` | `~/AI-Workspace/projects/kmo-landing-page/` | `https://github.com/kmorackbarcustom/kmo-landing-page.git` |
+| Production transaction | `D:\AI-Workspace\projects\kmorackbarcustom.github.io\` | `~/AI-Workspace/projects/kmorackbarcustom.github.io/` | `https://github.com/kmorackbarcustom/kmorackbarcustom.github.io.git` |
 | Old clone, do not edit | `D:\AI-Workspace\projects\landing page\KMO\` | not present on Mac (stale, do not recreate) | stale |
 
 ก่อนแก้ไฟล์ทุกครั้งให้เช็ก `git remote -v`, `git status`, และ branch ให้ตรง repo

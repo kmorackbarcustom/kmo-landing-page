@@ -128,7 +128,7 @@ featured=TRUE เฉพาะ id ที่ระบุไว้ด้านล�
 
 ## Where things live
 
-- Landing repo: `D:\AI-Workspace\projects\kmo-landing-page\` (Windows) / `/Users/wachirayachankhonkan/AI-Workspace/projects/kmo-landing-page/` (Mac) (remote `kmorackbarcustom/kmo-landing-page`)
-- Production repo (ห้ามแตะในงานนี้): `D:\AI-Workspace\projects\kmorackbarcustom.github.io\` (Windows) / `/Users/wachirayachankhonkan/AI-Workspace/projects/kmorackbarcustom.github.io/` (Mac)
+- Landing repo: `D:\AI-Workspace\projects\kmo-landing-page\` (Windows) / `~/AI-Workspace/projects/kmo-landing-page/` (Mac) (remote `kmorackbarcustom/kmo-landing-page`)
+- Production repo (ห้ามแตะในงานนี้): `D:\AI-Workspace\projects\kmorackbarcustom.github.io\` (Windows) / `~/AI-Workspace/projects/kmorackbarcustom.github.io/` (Mac)
 - Design tokens: `DESIGN_BRIEF.md`
 - สถานะโปรเจกต์เต็ม: `PROJECT_CONTEXT.md`, `CODEX_HANDOFF.md`

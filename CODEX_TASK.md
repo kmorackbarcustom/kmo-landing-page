@@ -13,11 +13,11 @@ The task is now complete and no longer represents current pending work.
 
 Landing repo:
 
-`D:\AI-Workspace\projects\kmo-landing-page\` (Windows) / `/Users/wachirayachankhonkan/AI-Workspace/projects/kmo-landing-page/` (Mac)
+`D:\AI-Workspace\projects\kmo-landing-page\` (Windows) / `~/AI-Workspace/projects/kmo-landing-page/` (Mac)
 
 Production repo:
 
-`D:\AI-Workspace\projects\kmorackbarcustom.github.io\` (Windows) / `/Users/wachirayachankhonkan/AI-Workspace/projects/kmorackbarcustom.github.io/` (Mac)
+`D:\AI-Workspace\projects\kmorackbarcustom.github.io\` (Windows) / `~/AI-Workspace/projects/kmorackbarcustom.github.io/` (Mac)
 
 D1 behavior completed:
 

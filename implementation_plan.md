@@ -24,11 +24,11 @@ Repo นี้ไม่ใช่ production transaction system และไม�
 
 ทำทุกครั้งก่อนแก้ไฟล์:
 
-1. Path ต้องเป็น `D:\AI-Workspace\projects\kmo-landing-page\` (Windows) / `/Users/wachirayachankhonkan/AI-Workspace/projects/kmo-landing-page/` (Mac)
+1. Path ต้องเป็น `D:\AI-Workspace\projects\kmo-landing-page\` (Windows) / `~/AI-Workspace/projects/kmo-landing-page/` (Mac)
 2. Remote ต้องเป็น `https://github.com/kmorackbarcustom/kmo-landing-page.git`
 3. Fetch/check status ก่อนแก้: `git fetch --all --prune`, `git status --short`
 4. ถ้าต้องแตะ transaction form หรือ Supabase ให้สลับไป production repo:
-   `D:\AI-Workspace\projects\kmorackbarcustom.github.io\` (Windows) / `/Users/wachirayachankhonkan/AI-Workspace/projects/kmorackbarcustom.github.io/` (Mac)
+   `D:\AI-Workspace\projects\kmorackbarcustom.github.io\` (Windows) / `~/AI-Workspace/projects/kmorackbarcustom.github.io/` (Mac)
 5. ห้ามแก้ clone เก่า:
    `D:\AI-Workspace\projects\landing page\KMO\` (Windows-only, ไม่มีบน Mac — ห้ามสร้างใหม่)
 
